@@ -22,7 +22,7 @@
 
 从仓库根目录运行 `npm ci && npm run check` 执行 lint、严格 JS 类型检查、单元/DOM 测试，并生成 `dist/`。可将 `dist/` 整体部署到任意静态托管平台，或将本目录单独作为站点根目录发布。
 
-GitHub Pages 的发布源使用 `gh-pages` 分支根目录，公开访问路径为 `https://liu0haha123.github.io/tools/currency-converter/`。需要仓库管理员在 Settings → Pages 开启；仅推送代码并不代表已上线。更新源码后重新运行 `npm run build` 并发布构建产物；合并源码 PR 本身不会自动更新发布分支。
+当前 GitHub Pages 的发布源为 `master` 分支的 `/ (root)` 目录，公开访问路径为 https://liu0haha123.github.io/tools/currency-converter/ 。仓库管理员在 Settings → Pages → Deploy from a branch 配置发布源。由于本项目无需构建即可运行，源码合并到 `master` 后由 GitHub 自动构建和部署；等待 Actions 中的 `pages build and deployment` 成功后才表示发布完成。其他静态托管平台仍可直接使用 `npm run build` 生成的 `dist/`。
 
 ## 隐私与安全
 

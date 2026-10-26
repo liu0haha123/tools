@@ -4,7 +4,7 @@
 
 ## 子项目
 
-- [人民币 ⇄ 美元](./currency-converter/)：查询最新参考汇率，输入任一币种金额进行双向换算。详见 [子项目说明](./currency-converter/README.md)。
+- [人民币 ⇄ 美元](./currency-converter/)：查询最新参考汇率，输入任一币种金额进行双向换算。[在线使用](https://liu0haha123.github.io/tools/currency-converter/)，详见 [子项目说明](./currency-converter/README.md)。
 
 ## 本地访问
 
@@ -12,6 +12,6 @@
 
 ## 发布
 
-可将静态页面发布到 GitHub Pages 或任意静态网站托管服务。网站内的资源使用相对路径，兼容 GitHub Pages 项目站点。
+当前 GitHub Pages 使用 `master` 分支的 `/ (root)` 目录发布，站点地址为 https://liu0haha123.github.io/tools/ 。合并到 `master` 后由 GitHub 自动构建和部署；网站内的资源使用相对路径，兼容 GitHub Pages 项目站点。
 
 使用 Node.js 24（`nvm use`）运行 `npm ci && npm run check`，生成仅含网站资源的 `dist/`。`npm run check` 包括 lint、严格 JavaScript 类型检查、单元/DOM 测试及构建。开发依赖不随网站发布。
